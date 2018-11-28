@@ -1,19 +1,26 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Random;
 
-public class DropCalc {
+import javax.swing.JComboBox;
 
+public class DropCalc implements ActionListener{
+	
 	private static int roll;
 	private static int roll2;
 	static int i = 1;
 	static int dropRate = 256;
 	static String[] itemDrops = {"Ranger Boots", "Armadyl Hilt", "Bandos Hilt", "Saradomin Hilt", "Zamorak Hilt", "Dragon Warhammer"};
 	
-	public void DropRate() {
+	
+	public void rateChange() {
 		
 	}
 
 	public void dCalc() {
 		
+		
+
 		i = 1;
 		
 		Random random = new Random();
@@ -49,6 +56,12 @@ public class DropCalc {
 
 	public static void setRoll2(int roll2) {
 		DropCalc.roll2 = roll2;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
